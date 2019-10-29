@@ -4,27 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:background="#088ab7"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
+            android:background="#ffffff"
             android:scaleType="fitXY"
             android:src="@drawable/tje_logo_01"
             android:layout_width="100dp"
             android:layout_height="100dp"/>
     </LinearLayout>
     <TextView
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:text="아이디"/>
 
     <FrameLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -42,12 +48,14 @@
             android:layout_height="40dp"/>
     </FrameLayout>
     <EditText
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColorHint="#ffffff"
         android:hint="비밀번호"
         android:textSize="25sp"/>
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -57,6 +65,7 @@
             android:layout_height="30dp"
             android:src="@mipmap/ic_launcher" />
         <TextView
+            android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#ffffff"
@@ -64,16 +73,21 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
+            android:background="#ffffff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="회원가입"/>
         <Button
-            android:layout_width="wrap_content"
+            android:background="#ffffff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="로그인"/>
 
